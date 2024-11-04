@@ -1,3 +1,7 @@
+# This implementation does not seem to work
+# Checking for existing sandbox user...
+# Error occurred: The URL path is not valid - The resource 'v1/sandboxTesters' does not exist
+
 require 'fastlane'
 require 'spaceship'
 
@@ -16,10 +20,10 @@ Spaceship::ConnectAPI.token = token
 sandbox_email = 'sandboxtester2345+gold@gmail.com'
 
 begin
-  # Delete the existing sandbox user if they exist
-  puts "Checking for existing sandbox user..."
-  sandbox_users = Spaceship::ConnectAPI::SandboxTester.all
-  user = sandbox_users.find { |u| u.email == sandbox_email }
+  # Delete the existing sandbox user if they exist - Not supported.
+#   puts "Checking for existing sandbox user..."
+#   sandbox_users = Spaceship::ConnectAPI::SandboxTester.all
+#   user = sandbox_users.find { |u| u.email == sandbox_email }
 
   if user
     puts "Existing sandbox user found, deleting..."
