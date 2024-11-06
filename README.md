@@ -10,4 +10,6 @@
 `export APP_STORE_CONNECT_P8_PATH='/path/to/AuthKey_your_key_id.p8'`
 
 3. Run the script in `sandbox_user.rb`
+`ruby sandbox_user.rb`
+
 
