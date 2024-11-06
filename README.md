@@ -1,6 +1,6 @@
 ## Project Setup
 
-1. Import fastlane and spaceship
+1. Install fastlane and spaceship
 
 `gem install fastlane`
 
